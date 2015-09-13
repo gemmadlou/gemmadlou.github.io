@@ -1,0 +1,10 @@
+.gradient-radial-topright-purple {
+  background-image:
+    -webkit-radial-gradient(circle at top right, #FFFEFE, #F7F7F7);
+  background-image:
+    radial-gradient(
+	  circle at top right,
+      #FFFEFE,
+      #F7F7F7
+    );
+}

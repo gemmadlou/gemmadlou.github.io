@@ -1,0 +1,26 @@
+.logo {
+	font-family: $font-headings-family;
+	color: #CFD0D2;
+}
+
+.logo-full-page {
+	@extend .logo;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	
+	&.heading {
+		font-size: 4em;
+		margin-left: -1em;
+		margin-top: -1.75em;
+		text-shadow: #663F67 -1px 0px 1px;
+	}
+	
+	&.description {
+		margin-left: -4em;
+		margin-top: 0em;
+		font-family: $font-general-family;
+		color: #D394DE;
+	}
+	
+}
