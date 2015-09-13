@@ -4,13 +4,26 @@
 <head>
     <meta charset="utf-8" />
     <title>TypeScript HTML App</title>
+	
+	<!-- Google Web fonts -->
 	<link href='https://fonts.googleapis.com/css?family=Lato|Pacifico' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="dist/css/main.css" type="text/css" />
-    <script src="dist/js/app.js"></script>
+    
+	<!-- Main compiled CSS -->
+	<link rel="stylesheet" href="dist/css/main.css" type="text/css" />
+	
+	<!-- Traceur compiler for ES6 support -->
+	<script src="https://github.jspm.io/jmcriffey/bower-traceur-runtime@0.0.87/traceur-runtime.js"></script>
+	
+	<!-- SystemJS - Universal dynamic module loader ie. ES6, AMD, CommonJS -->
+	<script src="https://jspm.io/system@0.16.js"></script>
+	
+	<!-- Angular2 scripts -->
+	<script src="https://code.angularjs.org/2.0.0-alpha.26/angular2.dev.js"></script>
+	
 </head>
-<body class="gradient-radial-topright-purple">
-    <span class="logo-full-page heading">GDL</span>
-	<span class="logo-full-page description">Full Stack Developer</span>
-    <!--<div id="content"></div>-->
+<body class="gradient-radial-topright-light">
+	<my-app></my-app>
+	<script>System.import('dist/js/app');</script>
+	
 </body>
 </html>

@@ -374,7 +374,7 @@ html {
 body {
   min-height: 100%; }
 
-.gradient-radial-topright-purple {
+.gradient-radial-topright-light {
   background-image: -webkit-radial-gradient(circle at top right, #FFFEFE, #F7F7F7);
   background-image: radial-gradient(circle at top right, #FFFEFE, #F7F7F7); }
 
@@ -392,12 +392,12 @@ body {
   top: 50%; }
   .logo-full-page.heading {
     font-size: 4em;
-    margin-left: -1em;
+    margin-left: -1.4em;
     margin-top: -1.75em;
     text-shadow: #663F67 -1px 0px 1px; }
-  .logo-full-page.description {
-    margin-left: -4em;
-    margin-top: 0em;
+  .logo-full-page.subtitle {
+    margin-left: -2.7em;
+    margin-top: -1.2em;
     font-family: "Lato", sans-serif;
     color: #D394DE; }
 

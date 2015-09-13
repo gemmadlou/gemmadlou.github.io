@@ -1,23 +1,25 @@
-var Greeter = (function () {
-    function Greeter(element) {
-        this.element = element;
-        this.element.innerHTML += "The time is: ";
-        this.span = document.createElement('span');
-        this.element.appendChild(this.span);
-        this.span.innerText = new Date().toUTCString();
+/// <reference path="../../typings/angular2/angular2.d.ts" />
+if (typeof __decorate !== "function") __decorate = function (decorators, target, key, desc) {
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") return Reflect.decorate(decorators, target, key, desc);
+    switch (arguments.length) {
+        case 2: return decorators.reduceRight(function(o, d) { return (d && d(o)) || o; }, target);
+        case 3: return decorators.reduceRight(function(o, d) { return (d && d(target, key)), void 0; }, void 0);
+        case 4: return decorators.reduceRight(function(o, d) { return (d && d(target, key, o)) || o; }, desc);
     }
-    Greeter.prototype.start = function () {
-        var _this = this;
-        this.timerToken = setInterval(function () { return _this.span.innerHTML = new Date().toUTCString(); }, 500);
-    };
-    Greeter.prototype.stop = function () {
-        clearTimeout(this.timerToken);
-    };
-    return Greeter;
-})();
-window.onload = function () {
-    var el = document.getElementById('content');
-    var greeter = new Greeter(el);
-    greeter.start();
 };
-//# sourceMappingURL=app.js.map
+var angular2_1 = require('angular2/angular2');
+var MyAppComponent = (function () {
+    function MyAppComponent() {
+        this.name = 'Gemma';
+    }
+    MyAppComponent = __decorate([
+        angular2_1.Component({
+            selector: 'my-app'
+        }),
+        angular2_1.View({
+            template: '<span class="logo-full-page heading">{{name}}</span><span class="logo-full-page subtitle">Full Stack Developer</span>'
+        })
+    ], MyAppComponent);
+    return MyAppComponent;
+})();
+angular2_1.bootstrap(MyAppComponent);
