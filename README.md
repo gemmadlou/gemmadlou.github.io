@@ -11,5 +11,5 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Workflow
 
-It will follow here: https://www.atlassian.com/agile/branching/
-I will be using simply a master branch, and issue branches.
+The worklow will be based on: https://www.atlassian.com/agile/branching/
+I will use a master branch, and issue branches.
