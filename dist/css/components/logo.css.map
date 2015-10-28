@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA,KAAM;EACL,SAAS,EAAE,GAAG",
-"sources": ["../../../src/sass/components/logo.scss"],
-"names": [],
-"file": "logo.css"
-}

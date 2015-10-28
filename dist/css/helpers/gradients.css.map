@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA,gCAAiC;EAC/B,gBAAgB,EACd,sDAIC",
-"sources": ["../../../src/sass/helpers/gradients.scss"],
-"names": [],
-"file": "gradients.css"
-}
