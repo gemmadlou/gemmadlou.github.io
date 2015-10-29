@@ -1,0 +1,30 @@
+&lt;svg version=&quot;1.1&quot; viewBox=&quot;0 0 200 70&quot;&gt;
+  &lt;defs&gt;
+  
+    &lt;style type=&quot;text/css&quot;&gt;
+      &lt;![CDATA[
+        .filtered{
+			filter: url(#gemma-glow);
+        }
+      ]]&gt;
+    &lt;/style&gt;
+    
+    &lt;filter id=&quot;gemma-glow&quot;&gt;
+      &lt;feMorphology operator=&quot;dilate&quot; radius=&quot;0&quot; in=&quot;SourceAlpha&quot; result=&quot;BEVEL_10&quot; /&gt;
+      &lt;feOffset dx=&quot;0.5&quot; dy=&quot;-1.5&quot; in=&quot;BEVEL_20&quot; result=&quot;BEVEL_30&quot;/&gt;
+      &lt;feComposite operator=&quot;out&quot; in=&quot;BEVEL_20&quot; in2=&quot;BEVEL_10&quot; result=&quot;BEVEL_30&quot;/&gt;
+      &lt;feFlood flood-color=&quot;#D874FF&quot; result=&quot;COLOR-glow&quot; /&gt;
+      &lt;feComposite in=&quot;COLOR-glow&quot; in2=&quot;BEVEL_30&quot; operator=&quot;in&quot; result=&quot;BEVEL_40&quot; /&gt;
+      &lt;feMerge result=&quot;BEVEL_50&quot;&gt;
+         &lt;feMergeNode in=&quot;BEVEL_40&quot; /&gt;
+         &lt;feMergeNode in=&quot;SourceGraphic&quot; /&gt;
+      &lt;/feMerge&gt;
+    &lt;/filter&gt;
+    
+  &lt;/defs&gt;
+
+  &lt;g class=&quot;filtered&quot;&gt;
+    &lt;text x=&quot;5px&quot; y=&quot;55px&quot; font-size=&quot;38px&quot; fill=&quot;#f9f9f9&quot; font-family=&quot;'Monoton', cursive&quot; transform=&quot;rotate(-3)&quot; class=&quot;text-shadow-glow-purple&quot;&gt;Gemma&lt;/text&gt;
+    &lt;/div&gt;
+  &lt;/g&gt;
+&lt;/svg&gt;
