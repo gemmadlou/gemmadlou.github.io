@@ -1,10 +1,10 @@
-.logo {
+.logo2 {
 	font-family: $font-headings-family;
 	color: #CFD0D2;
 }
 
-.logo-full-page {
-	@extend .logo;
+.logo2-full-page {
+	@extend .logo2;
 	position: absolute;
 	left: 50%;
 	top: 50%;

@@ -20,3 +20,4 @@ $RECYCLE.BIN/
 # =========================
 
 node_modules/*
+.sass-cache/**

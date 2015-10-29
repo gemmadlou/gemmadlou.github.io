@@ -1,0 +1,28 @@
+.text-shadow-glow-purple {
+
+	text-shadow: 0 0 5px #fff, 
+		0 0 3em #fff, 
+		0 0 0.3em #fff, 
+		0 0 0.2em #FF1177, 
+		0 0 1em #FF1177, 
+		0 0 0.5em #FF1177;
+		
+	@include device-tiny-upwards {
+		text-shadow: 0 0 5px #fff, 
+			0 0 3em #fff, 
+			0 0 0.5em #fff, 
+			0 0 0.6em #FF1177, 
+			0 0 2em #FF1177, 
+			0 0 1.2em #FF1177;
+	}
+		
+	@include device-small-upwards {
+		text-shadow: 0 0 5px #fff, 
+			0 0 10px #fff, 
+			0 0 5px #fff, 
+			0 0 2px #FF1177, 
+			0 0 60px #FF1177, 
+			0 0 2em #FF1177;
+	}
+}
+

@@ -374,6 +374,12 @@ html {
 body {
   min-height: 100%; }
 
+/**
+ * Fonts
+ */
+/**
+ * Breakpoints
+ */
 .gradient-radial-topright-light {
   background-image: -webkit-radial-gradient(circle at top right, #FFFEFE, #F7F7F7);
   background-image: radial-gradient(circle at top right, #FFFEFE, #F7F7F7); }
@@ -382,20 +388,29 @@ body {
   font-family: "Lato", sans-serif;
   color: #7E7E84; }
 
-.logo, .logo-full-page {
+.text-shadow-glow-purple {
+  text-shadow: 0 0 5px #fff,  0 0 3em #fff,  0 0 0.3em #fff,  0 0 0.2em #FF1177,  0 0 1em #FF1177,  0 0 0.5em #FF1177; }
+  @media (min-width: 454px) {
+    .text-shadow-glow-purple {
+      text-shadow: 0 0 5px #fff,  0 0 3em #fff,  0 0 0.5em #fff,  0 0 0.6em #FF1177,  0 0 2em #FF1177,  0 0 1.2em #FF1177; } }
+  @media (min-width: 768px) {
+    .text-shadow-glow-purple {
+      text-shadow: 0 0 5px #fff,  0 0 10px #fff,  0 0 5px #fff,  0 0 2px #FF1177,  0 0 60px #FF1177,  0 0 2em #FF1177; } }
+
+.logo2, .logo2-full-page {
   font-family: "Pacifico", sans-serif;
   color: #CFD0D2; }
 
-.logo-full-page {
+.logo2-full-page {
   position: absolute;
   left: 50%;
   top: 50%; }
-  .logo-full-page.heading {
+  .logo2-full-page.heading {
     font-size: 4em;
     margin-left: -1.4em;
     margin-top: -1.75em;
     text-shadow: #663F67 -1px 0px 1px; }
-  .logo-full-page.subtitle {
+  .logo2-full-page.subtitle {
     margin-left: -2.7em;
     margin-top: -1.2em;
     font-family: "Lato", sans-serif;

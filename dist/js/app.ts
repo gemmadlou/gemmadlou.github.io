@@ -7,7 +7,7 @@ import {Component, View, bootstrap} from 'angular2/angular2';
   selector: 'my-app'
 })
 @View({
-  template: '<span class="logo-full-page heading">{{name}}</span><span class="logo-full-page subtitle">Full Stack Developer</span>'
+  template: '<span class="logo2-full-page heading">{{name}}</span><span class="logo2-full-page subtitle">Full Stack Developer</span>'
 })
 // Component controller
 class MyAppComponent {

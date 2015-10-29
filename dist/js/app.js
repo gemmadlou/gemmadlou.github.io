@@ -17,7 +17,7 @@ var MyAppComponent = (function () {
             selector: 'my-app'
         }),
         angular2_1.View({
-            template: '<span class="logo-full-page heading">{{name}}</span><span class="logo-full-page subtitle">Full Stack Developer</span>'
+            template: '<span class="logo2-full-page heading">{{name}}</span><span class="logo2-full-page subtitle">Full Stack Developer</span>'
         })
     ], MyAppComponent);
     return MyAppComponent;
