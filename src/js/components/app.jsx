@@ -2,20 +2,28 @@ import React from 'react';
 import ReactDom from 'react-dom';
 import { getArticle } from '../services/articles';
 import marked from 'marked';
+import matter from 'gray-matter';
 
 export class App extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            article: 'hi'
+            postNum: 1,
+            date: '',
+            title: '',
+            article: ''
         }
     }
 
     componentDidMount() {
         getArticle()
             .then(data => {
+                let contents = matter(data.data)
                 this.setState({
-                    article: marked(data.data)
+                    postNum: contents.data.postNumber,
+                    date: contents.data.date,
+                    title: contents.data.title,
+                    article: marked(contents.content)
                 })
             })
             .catch(console.log);
@@ -29,16 +37,16 @@ export class App extends React.Component {
                 <div className="dtc v-mid z-1 relative">
                     <div className="pa5 mw8 w-100 center">
                         <header className="center w-100">
-                            <h2 className="f6 fw1 ttu tracked mb2 lh-title">Post No. 1</h2>
+                            <h2 className="f6 fw1 ttu tracked mb2 lh-title">Post No. {this.state.postNum}</h2>
                         </header>
                         <h1 className="center w-100">
                             <div className="f1 fw4 mw6">
-                                Why another NPM package starter?
+                                {this.state.title}
                             </div>
                         </h1>
                         <blockquote className="ph0 mh0 f4 lh-copy center">
                             <div className="f6 ttu tracked fs-normal">
-                                April 2017
+                                {this.state.date}
                             </div>
                         </blockquote>
                     </div>
