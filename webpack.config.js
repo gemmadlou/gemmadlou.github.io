@@ -1,10 +1,7 @@
 const path = require('path');
-const NpmInstallPlugin = require('npm-install-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
-let plugins = [
-    new NpmInstallPlugin
-];
+let plugins = [];
 
 if (process.env.environment === 'production') {
     plugins.push(new UglifyJsPlugin);
@@ -22,9 +19,7 @@ module.exports = {
     ],
     output: {
         path: path.resolve(__dirname, "dist"),
-        filename: "app.js",
-        library: 'NPMPackageStarter',
-        libraryTarget: 'umd'
+        filename: "app.js"
     },
     plugins,
     module: {
@@ -48,6 +43,16 @@ module.exports = {
                 }, {
                     loader: "sass-loader" // compiles Sass to CSS
                 }]
+            },
+            {
+                test: /\.jsx?$/,
+                exclude: /node_modules/,
+                use: {
+                    loader: 'babel-loader',
+                    options: {
+                        presets: ["react"]
+                    }
+                 }
             }
        ]
     }

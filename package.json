@@ -39,11 +39,17 @@
     }
   },
   "dependencies": {
+    "axios": "^0.18.0",
+    "babel-preset-react": "^6.24.1",
     "css-loader": "^0.28.10",
+    "domready": "^1.0.8",
+    "marked": "^0.3.19",
     "node-sass": "^4.7.2",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "reset-css": "^3.0.0",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.20.2",
-    "tachyons": "^4.9.1",
-    "tachyons-sass": "^4.9.2"
+    "tachyons": "^4.9.1"
   }
 }

@@ -1,0 +1,47 @@
+.s-body-copy {
+    @extend .lh-copy;
+    @extend .f4;
+    @extend .fw2;
+
+    h1 {
+        @extend .f2;
+        @extend .fw6;
+        @extend .mb4;
+    }
+
+    h2 {
+        @extend .f3;
+        @extend .fw6;
+        @extend .mb4;
+        @extend .ttu;
+    }
+
+    h3,
+    h4,
+    h5,
+    h6 {
+        @extend .f3;
+        @extend .fw5;
+        @extend .mb4;
+    }
+
+    p {
+        @extend .mb4;
+    }
+
+    a {
+        color: inherit;
+    }
+
+    ol {
+        @extend .mb4;
+        @extend .ml5;
+        list-style: decimal;
+    }
+
+    ul {
+        @extend .mb4;
+        @extend .ml5;
+        list-style: disc;
+    }
+}
